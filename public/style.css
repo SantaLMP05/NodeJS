@@ -1,5 +1,64 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+/* Use it globally */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
   background: #ffffff;
   padding: 20px;
 }
@@ -44,6 +103,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .dp{
@@ -53,15 +113,25 @@ table {
   width: 50px;
   margin: 10px;
   border-radius: 50px;
+  
 }
-
+table {
+  border-radius: 20px;
+  border-collapse: separate;
+  overflow: hidden;
+  background-color: white; /* or whatever you're using */
+}
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
+
+th{
+  background-color: #e7e7e7;
+}
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #e7e7e7;
 }
 
 
