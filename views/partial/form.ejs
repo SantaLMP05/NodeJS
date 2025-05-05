@@ -1,0 +1,8 @@
+<form action="<%= formAction %>" method="POST">
+    <input type="text" name="name" placeholder="Name" value="<%= user?.name || '' %>" required />
+    <input type="text" name="address" placeholder="Address" value="<%= user?.address || '' %>" required />
+    <input type="email" name="email" placeholder="Email" value="<%= user?.email || '' %>" required />
+    <input type="text" name="contact" placeholder="Contact" value="<%= user?.contact || '' %>" required />
+    <button type="submit"><%= buttonText || 'Submit' %></button>
+  </form>
+  

@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+.CName{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  margin: 10px;
+}
+nav{
+  display: flex;
+  /* justify-content: space-between; */
+  justify-items: center;
+  align-items: center;
+}
+.para{
+  margin-top: 0.3rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dp{
+  display: inline-block;
+  background: #a5a4a4;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.user-info{
+  display: flex;
+  align-items: center;
+  gap: 10;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: rgb(160, 67, 67);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.edit{
+  color: rgb(73, 173, 73) !important;
+}
+.view{
+  color: rgb(64, 64, 172);
+}
