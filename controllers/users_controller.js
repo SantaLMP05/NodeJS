@@ -12,6 +12,34 @@ const userModel = require("../models/user")
     res.redirect('/');
   };
 
+  exports.viewUser = (req, res) => {
+    const userId = req.params.id;
+    const user = userModel.getById(userId);
+  
+    if (!user) {
+      return res.status(404).send('User not found');
+    }
+  
+    res.render('users/view', { user });
+  };
+
+  exports.updateUser = (req, res) => {
+    res.render('/update')
+    // const { id } = req.params;
+    // const { name, address, email, contact } = req.body;
+  
+    // const user = {
+    //   id,
+    //   name,
+    //   address,
+    //   email,
+    //   contact
+    // };
+  
+    // userModel.update(user);
+    // res.redirect('/');
+  };
+
   exports.deleteUser = (req, res) => {
     const userId = req.params.id;
   

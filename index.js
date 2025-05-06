@@ -28,6 +28,8 @@ app.set('layout', 'layouts/main');
 //users Routes
 app.get('/', userController.getHome);
 app.post('/add', userController.getAddUser);
+app.get('/view/:id', userController.viewUser);
+app.get('/update/:id', userController.updateUser);
 app.post('/delete/:id', userController.deleteUser);
 
 

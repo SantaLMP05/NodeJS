@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "better-sqlite3": "^11.9.1",
     "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-ejs-layouts": "^2.5.1",
-    "modal-vanilla": "^0.13.0",
-    "objectbox": "^0.3.0"
+    "modal-vanilla": "^0.13.0"
   }
 }
